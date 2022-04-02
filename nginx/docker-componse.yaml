@@ -1,1 +1,9 @@
 version: "3"
+service:
+    nginx: 1.21.6
+    restart: always
+    volumes:
+      - ./upstream/:/etc/nginx/conf.d/
+    ports:
+      - 80:80
+      - 443:443
