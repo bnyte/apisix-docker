@@ -7,7 +7,7 @@ services:
     restart: always
     volumes:
       - ./upstream/:/etc/nginx/conf.d/
-      - /opt/ssl/nginx/:/opt/ssl/nginx/
+      - /opt/ssl/nginx:/opt/ssl/nginx
     ports:
       - 80:80
       - 443:443
