@@ -2,7 +2,7 @@ version: "3"
 
 services:
   nginx:
-    image: 1.21.6
+    image: latest
     restart: always
     volumes:
       - ./upstream/:/etc/nginx/conf.d/
